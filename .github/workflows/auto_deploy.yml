@@ -35,4 +35,4 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: delopying using surge
-        run: surge ./  mumtaz.surge.sh --token {{ secrets.SURGE_TOKEN}}
+        run: surge ./  mumtaz.surge.sh --token ${{ secrets.SURGE_TOKEN}}
